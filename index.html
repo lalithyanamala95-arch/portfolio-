@@ -226,44 +226,17 @@ button:active {
 <section>
     <h2>Contact Me</h2>
 
-    <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+    <form action="https://formspree.io/f/meoqqwvz" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit">Send Message</button>
-        <div class="success-message" id="successMsg">✓ Message sent successfully!</div>
     </form>
 
     <p style="margin-top: 20px; color: #b0b0b0;">
         If you find my portfolio interesting, feel free to reach out to me via email.
     </p>
 </section>
-
-<script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    // Create email
-    const mailtoLink = `mailto:yanamalalalith@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(`From: ${name}\nEmail: ${email}\n\n${message}`)}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Show success message
-    const successMsg = document.getElementById('successMsg');
-    successMsg.style.display = 'block';
-    
-    // Clear form
-    setTimeout(() => {
-        document.getElementById('contactForm').reset();
-        successMsg.style.display = 'none';
-    }, 2000);
-});
-</script>
 
 </body>
 </html>
