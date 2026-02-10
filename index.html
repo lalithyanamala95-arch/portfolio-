@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Y. Lalith Saagar Reddy | Portfolio</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 40px;
+    color: #ffffff;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: zoomIn 1.2s ease;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+header p {
+    margin-top: 6px;
+    opacity: 0.9;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    animation: fadeUp 1s ease;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* ---------- EDUCATION ---------- */
+ul li {
+    margin: 10px 0;
+    list-style: "🎓 ";
+    padding-left: 10px;
+}
+
+/* ---------- PROJECTS ---------- */
+.project {
+    background: rgba(0,0,0,0.25);
+    padding: 18px;
+    border-radius: 12px;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.03);
+}
+
+.project h4 {
+    margin-bottom: 8px;
+}
+
+/* ---------- CONTACT ---------- */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #00e6e6;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #00cccc;
+    transform: translateY(-2px);
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Y. Lalith Saagar Reddy</h1>
+    <p>📧 yanamalalalith@gmail.com</p>
+    <p>🎓 USN: 1VA23CD126</p>
+</header>
+
+<!-- EDUCATION -->
+<section>
+    <h2>Education</h2>
+    <ul>
+        <li>Bachelor of Engineering – Sai Vidya Institute of Technology</li>
+        <li>PUC – Sri Chaitanya PU College</li>
+        <li>School – Sri Chaitanya Techno School</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h4>Diet Planner</h4>
+        <p>
+            This project is a smart diet planning system that collects user inputs such as budget and basic dietary preferences, and generates a customized diet plan accordingly. The system focuses on providing nutritionally balanced meal recommendations while ensuring affordability, making healthy eating accessible to users with different budget constraints.
+        </p>
+    </div>
+
+    <div class="project">
+        <h4>Diet Planner with Direct Orders</h4>
+        <p>
+            This project is an advanced version of the diet planner that not only recommends diet plans based on user input and budget but also enables users to directly order food through the website. It integrates APIs from food delivery platforms like Swiggy and Zomato to fetch food options within the user's budget, creating a seamless experience from diet planning to food ordering.
+        </p>
+    </div>
+
+    <div class="project">
+        <h4>Fitness Partner Mobile App (Tinder-like App for Gym Users)</h4>
+        <p>
+            This mobile application is designed for gym enthusiasts to find compatible workout partners in their local area or within the same gym. The app uses a Tinder-like matching system and includes features such as in-app chat, subscription plans, and an AI-based training mode. The goal of the project is to improve workout consistency, motivation, and social engagement among fitness-focused users.
+        </p>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section>
+    <h2>Contact Me</h2>
+
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+
+    <p>
+        If you find my portfolio interesting, feel free to reach out to me via email.
+    </p>
+
+    <textarea placeholder="Your Message"></textarea>
+    <button>Send Message</button>
+</section>
+
+</body>
+</html>
